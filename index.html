@@ -85,16 +85,16 @@
     </style>
     <meta charset="utf-8">
 </head>
-<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:600' rel='stylesheet' type='text/css'>
 
 <body text="#000000" bgcolor="#ffffff" link="#0099ff" vlink="#0099ff" alink="#0099ff">
     <script type="text/javascript">
 
         console.log(document.getElementById("list").innerText);
-        let xml = new XMLHttpRequest();
-        xml.open("GET", "list.txt", false);
-        xml.send();
-        var namMember = xml.responseText.split('\n');
+        let xhr = new XMLHttpRequest();
+        xhr.open("GET", "list.txt", false);
+        xhr.send();
+        var namMember = xhr.responseText.split('\n');
         var lstMember = new Array();
         var parent = new Array();
         var equal = new Array();
