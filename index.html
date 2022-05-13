@@ -34,64 +34,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
     <meta http-equiv="Content-Style-Type" content="text/css">
     <meta http-equiv="Content-Script-Type" content="text/javascript">
-    <style type="text/css">
-        #mainTable {
-            font-size: 19px;
-            font-family: 'Josefin Slab', serif;
-            text-align: center;
-            vertical-align: middle;
-            width: 410px;
-            margin-left: auto;
-            margin-right: auto;
-            border-collapse: separate;
-            border-spacing: 10px 5px;
-        }
-
-        #leftField {
-            width: 120px;
-            height: 150px;
-            border: 1px solid #000;
-            cursor: pointer;
-        }
-
-        #rightField {
-            width: 120px;
-            height: 150px;
-            border: 1px solid #000;
-            cursor: pointer;
-        }
-
-        .middleField {
-            width: 120px;
-            height: 70px;
-            border: 1px solid #000;
-            cursor: pointer;
-        }
-
-        a {
-            color: #5b17ba;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #945ce3;
-        }
-
-        body {
-            width: 600px;
-            margin: 0 auto;
-            font-family: 'Josefin Slab', erif;
-        }
-    </style>
-    <meta charset="utf-8">
-</head>
-<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:600' rel='stylesheet' type='text/css'>
-
-<body text="#000000" bgcolor="#ffffff" link="#0099ff" vlink="#0099ff" alink="#0099ff">
     <script type="text/javascript">
-
-        console.log(document.getElementById("list").innerText);
-        let xhr = new XMLHttpRequest();
+        var xhr = new XMLHttpRequest();
         xhr.open("GET", "list.txt", false);
         xhr.send();
         var namMember = xhr.responseText.split('\n');
@@ -330,6 +274,61 @@
         }
 
     //--></script>
+    <style type="text/css">
+        #mainTable {
+            font-size: 19px;
+            font-family: 'Josefin Slab', serif;
+            text-align: center;
+            vertical-align: middle;
+            width: 410px;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: separate;
+            border-spacing: 10px 5px;
+        }
+
+        #leftField {
+            width: 120px;
+            height: 150px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+
+        #rightField {
+            width: 120px;
+            height: 150px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+
+        .middleField {
+            width: 120px;
+            height: 70px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+
+        a {
+            color: #5b17ba;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #945ce3;
+        }
+
+        body {
+            width: 600px;
+            margin: 0 auto;
+            font-family: 'Josefin Slab', erif;
+        }
+    </style>
+    <meta charset="utf-8">
+</head>
+<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:600' rel='stylesheet' type='text/css'>
+
+<body text="#000000" bgcolor="#ffffff" link="#0099ff" vlink="#0099ff" alink="#0099ff">
+
     <p class="instructions">
         <center><img src=""><br /><br />
             Welcome to the song sorter!<br /><br />Pick what song you like better in each battle to get an accurate list
